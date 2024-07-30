@@ -2,7 +2,7 @@ name: Release
 
 on:
   release:
-    types: [created]
+    types: [ published ]
 
 jobs:
   release:
@@ -12,18 +12,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '2.7' # Specify the Ruby version you are using
-
-    - name: Install CocoaPods
-      run: gem install cocoapods
-
-    - name: Validate podspec
-      run: pod lib lint --allow-warnings
-
-    - name: Push to CocoaPods trunk
+    - uses: michaelhenry/deploy-to-cocoapods-github-action@1.0.10
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-      run: pod trunk push RadarSDKMotion.podspec --allow-warnings
