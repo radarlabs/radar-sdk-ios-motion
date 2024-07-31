@@ -73,7 +73,7 @@
 		E6F3D41D2C5977DC009C8D08 /* RadarSDKMotion */ = {
 			isa = PBXGroup;
 			children = (
-				E6F3D41E2C5977DC009C8D08 /* RadarSDKMotion.h */,
+				E6F3D4392C5A884B009C8D08 /* Include */,
 				E6F3D4352C597D77009C8D08 /* RadarSDKMotion.m */,
 				E6F3D41F2C5977DC009C8D08 /* RadarSDKMotion.docc */,
 			);
@@ -86,6 +86,14 @@
 				E6F3D42A2C5977DC009C8D08 /* RadarSDKMotionTests.swift */,
 			);
 			path = RadarSDKMotionTests;
+			sourceTree = "<group>";
+		};
+		E6F3D4392C5A884B009C8D08 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				E6F3D41E2C5977DC009C8D08 /* RadarSDKMotion.h */,
+			);
+			path = Include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

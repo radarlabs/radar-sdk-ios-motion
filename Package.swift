@@ -17,7 +17,7 @@ let package = Package(
             name: "RadarSDKMotion",
             dependencies: [],
             path: "RadarSDKMotion/RadarSDKMotion",
-            publicHeadersPath: "."
+            publicHeadersPath: "Include"
             ),
     ]
 )
