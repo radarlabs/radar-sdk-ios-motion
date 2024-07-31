@@ -42,7 +42,11 @@
 }
 
 - (CMAccelerometerData *)getAccelerometerData {
-    return self.motionManager.accelerometerData;
+    
+    if (self.motionManager.isAccelerometerActive) {
+        return self.motionManager.accelerometerData;
+    }
+    return nil;
 }
 
 - (void)stopAccelerometerUpdates {
@@ -56,7 +60,10 @@
 }
 
 - (CMGyroData *)getGyroData {
-    return self.motionManager.gyroData;
+    if (self.motionManager.isGyroActive) {
+        return self.motionManager.gyroData;
+    }
+    return nil;
 }
 
 - (void)stopGyroUpdates {
@@ -70,7 +77,10 @@
 }
 
 - (CMMagnetometerData *)getMagnetometerData {
-    return self.motionManager.magnetometerData;
+    if (self.motionManager.isMagnetometerActive) {
+        return self.motionManager.magnetometerData;
+    }
+    return nil;
 }
 
 - (void)stopMagnetometerUpdates {
