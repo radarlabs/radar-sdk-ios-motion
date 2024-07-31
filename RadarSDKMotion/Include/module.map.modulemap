@@ -1,0 +1,12 @@
+//
+//  module.map.modulemap
+//  RadarSDKMotion
+//
+//  Created by Kenny Hu on 7/31/24.
+//
+
+module RadarSDKMotion {
+    header "RadarSDKMotion.h"
+
+    export *
+}

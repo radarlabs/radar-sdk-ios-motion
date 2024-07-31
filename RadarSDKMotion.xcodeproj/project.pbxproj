@@ -31,6 +31,7 @@
 		E6F3D4252C5977DC009C8D08 /* RadarSDKMotionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadarSDKMotionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F3D42A2C5977DC009C8D08 /* RadarSDKMotionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarSDKMotionTests.swift; sourceTree = "<group>"; };
 		E6F3D4352C597D77009C8D08 /* RadarSDKMotion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadarSDKMotion.m; sourceTree = "<group>"; };
+		E6F3D43F2C5A9282009C8D08 /* module.map.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.map.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				E6F3D41E2C5977DC009C8D08 /* RadarSDKMotion.h */,
+				E6F3D43F2C5A9282009C8D08 /* module.map.modulemap */,
 			);
 			path = Include;
 			sourceTree = "<group>";
